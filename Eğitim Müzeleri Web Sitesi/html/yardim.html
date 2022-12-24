@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim Müzeleri | Yardım</title>
+   <!--<link href="../css/sifirlama.css" type="text/css" rel="stylesheet">--> 
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+    <!--Header kısmı-->
+    <div class="header">
+        <div class="logo">
+            <a href="../anasayfa.html"><img src="../images/logo.png"></a>
+        </div>
+            <ul>
+                <li><a href="../anasayfa.html"><img src="../images/anasayfa.png"><p>Anasayfa</p></a></li>
+                <li><a href="hakkımızda.html"><img src="../images/hakkımda.png"><p>Hakkımızda</p></a></li>
+                <li ><a href="muzeler.html"><img src="../images/muze.png"><p>Müzeler</p></a></li>
+                <li><a href="haberler.html"><img src="../images/haber.png"><p>Haberler</p></a></li>
+                <li class="active"><a href="yardim.html"><img src="../images/yardım.png"><p>Yardım</p></a></li>
+            </ul>
+    </div>
+   <img id="muzeArka" src="../images/muze_arkaplan1.jpg" alt="">
+
+    <!--Content kısmı-->
+    <div class="content">
+        <!--Müzeler ve hakkında kısa bilgiler kısmı-->
+        <div class="formKismi">
+            <p>Türkiye'de bulunan eğitim müzelerine bir grupça mı gitmek istiyorsunuz? <br/>O zaman aşağıda yer alan formu doldurun ve size yardımcı olalım.</p><br/><br/>
+            <form action="../anasayfa.html" method="get">
+                <fieldset>
+                    <legend>Yardım Formu</legend>
+                    <table>
+                        <tr>
+                            <td><label for="Kname">Ad:</label></td>
+                            <td><input type="text" name="name" size="25" id="Kname" required placeholder="Adınız..."></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Ksurname">Soyad:</label></td>
+                            <td><input type="text" name="surname" id="Ksurname" required placeholder="Soyadınız..."></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Keposta">E-posta Adresi:</label></td>
+                            <td><input type="email" name="eosta" id="Keposta" required placeholder="E-posta adresiniz..."></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Knumara">Telefon Numarası:</label></td>
+                            <td><input type="tel" id="Knumara" name="numara" required placeholder="05---------" maxlength="11"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Cinsiyet:</label></td>
+                            <td><label class="container" for="Kkadin">Kadın
+                                <input type="radio" name="cinsiyet" value="Kadın" id="Kkadin">
+                                <span class="checkmark"></span></label>
+                                <label class="container" for="Kerkek">Erkek
+                                <input type="radio" name="cinsiyet" value="Erkek" id="Kerkek">
+                                <span class="checkmark"></span></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="Kage">Doğum Tarihi:</label></td>
+                            <td><input type="date" name="age" id="Kage" required ></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Kmuze">Ziyaret Edilecek Müze:</label></td>
+                            <td><select name="Kmuze" size="3" multiple id="muzeİsimleri" required >
+                                <option value="cumhuriyetEgitimMuze">Cumhuriyet Eğitim Müzesi</option>
+                                <option value="ataturkEgitimMuzesi">Atatürk Eğitim Müzesi</option>
+                                <option value="75YilCumhuriyetEgitimMuzesi">75. Yıl Cumhuriyet Eğitim Müzesi</option>
+                                <option value="ankaraEgitimDernegiMuzesi">Ankara Eğitim Derneği Müzesi</option>
+                                <option value="izmirCumhuriyetEgitimMuzesi">İzmir Cumhuriyet Eğitim Müzesi</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Kkisi">Gidecek Kişi Sayısı:</label></td>
+                            <td><select name="kKisi" required  >
+                                <option value="secim">Seçiniz...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Kmesaj">Eklemek istediğiniz mesaj/istek/dilek:</label>
+                                </td>
+                            <td><textarea name="mesaj" id="Kmesaj">Buraya yazınız...</textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" name="gonder" value="Gönder"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <!--Footer kısmı-->
+    <div class="footer">
+        <div class="logo">
+            <img src="../images/logo.png">
+        </div>
+        <ul>
+            <li><a href="#" ><img src="../images/facebook.png " alt="Facebook"></a></li>
+            <li><a href="#" ><img src="../images/instagram.png " alt="İnstagram"></a></li>
+            <li><a href="#" ><img src="../images/twitter.png " alt="Twitter"></a></li>
+        </ul>
+        
+        <p>© 2022 Tüm Hakları Saklıdır.</p>
+    </div>
+</body>
+</html>

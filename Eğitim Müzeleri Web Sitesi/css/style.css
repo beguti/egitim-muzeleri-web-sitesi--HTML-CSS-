@@ -1,0 +1,773 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+#muzeArka{
+    width: 100%;
+    position: fixed;
+    top:0;
+}
+
+/*Anasayfa kısmı css*/
+
+.total img{
+  z-index: 1000;
+}
+
+#anaLogo{
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+  top:30px;
+  padding: auto;
+}
+
+#anaLogo img {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin:0px auto;
+}
+
+
+.kutu{
+    width: 180px;
+    height: 200px;
+    background-color: rgb(168, 218, 220);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    box-shadow: 0 20px 30px rgba(206, 210, 232, 0.05);
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+    border: 1px solid #4b91ce; 
+}
+
+.kutu:hover{
+  transform: translateY(-10px) scale(1.05);
+  box-shadow:0 20px 30px rgba(168, 218, 220, 0.05);
+  cursor: pointer;
+  background-color: rgba(242, 206, 174, 0.95);
+  border-color: rgb(216, 120, 85);
+  transition: 0.10s;
+
+}
+
+.kutu p{
+  position: absolute;
+  color:black;
+  font-weight:bolder;
+  font-size: 20px;
+  margin-top: 150px;
+  z-index: 100;
+  transition: color 0.3 ease-out;
+
+}
+.box-circle{
+  width: 85px;
+  height: 85px;
+  border-radius: 130px;
+  background: rgb(241, 250, 238);
+  border: 2.5px solid #4b91ce; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  transition: all 0.3 ease-out;
+  margin-bottom: 30px;
+
+}
+.box-circle.img{
+  z-index: 1000;
+  width: 70%;
+  height: 70%;
+  opacity: 0.004;
+}
+
+.total{
+  display: flex;
+  padding-left: 10px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.hakkımızda{
+  margin-left:2%;
+  margin-top: 30%;  
+}
+.muze{
+  margin-left:-10%;
+  margin-top: 30%;
+}
+
+.haberler{
+  margin-left: -10%;
+  margin-top: 30%;
+}
+
+.yardim{
+    margin-left: -10%;
+    margin-top: 30%;
+}
+
+/*Diğer sayfalardaki temel css kodları*/
+
+/*Header kısmı*/
+.header{
+    width:100%;
+    height: 100px;
+    position: fixed; 
+    top: 0;
+    left: 0;  
+    z-index: 1;
+    background-color: rgba(242, 206, 174, 0.95);
+}
+
+.header .logo{
+    width: 100px;
+    height: 100px;
+    float: left;
+    position: absolute;
+    left:14%;
+}
+
+.header .logo img{
+    height: 85px;
+    position: absolute;
+    top:10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header ul{
+    clear: both;
+    border-radius: 10px;
+    width:800px;
+    position: absolute;
+    top: 20px;
+    right:5%;
+}
+
+.header ul img{
+    width:30px;
+}
+
+.header p{
+    float: right;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:2px;
+    left:8px;
+    padding: 5px;
+}
+
+.header li.active{
+    background-color: #80BDF2;
+}
+
+.header ul li{
+    list-style-type: none;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.header ul li a{
+    text-decoration: none;
+ 
+    color: #212221;
+    font-size: 1.2em;
+}
+
+.header ul li:hover{
+    background-color: #D97855;
+    transition: 0.5s;
+}
+
+.header ul a:hover{
+    color: #f1faee;
+}
+
+/*Content Kısmı*/
+.content{
+    position: relative;
+    top: 200px;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Yazılar Kısmı*/
+.yazilarKismi{
+    width: 68%;
+    display: inline-block;
+    background-color: #bcd8f3;
+    padding:50px 30px;
+    border-radius: 2px 100px;
+    box-shadow: 5px 5px 5px #eed5bebb;
+}
+
+/*Başlıklar Kısmı*/
+.basliklarKismi{
+    width: 28.6%;
+    float: right;
+    background-color: #F2CEAE;
+    padding:50px 20px;  
+    border-radius: 100px 2px;
+    box-shadow: 0 5px 5px  #b8d9f7c0;
+}
+.basliklarKismi h2{
+    color: #f1faee;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-top: 30px;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.842);
+}
+
+.basliklarKismi ul{
+    padding: 25px 40px;
+}
+
+.basliklarKismi ul li{
+    list-style-image: url('../images/madde_hareketsiz.png');
+    margin-bottom:15px;
+    margin-left: 10px;
+}
+
+.basliklarKismi ul li a{
+    text-decoration: none;
+    color: #212221;
+    font-size: 1.2em;
+    position: relative;
+    top:-2px;
+}
+
+.basliklarKismi ul li:hover{
+    list-style-image: url('../images/link_isaret.png');
+    transition: 0.3s;
+}
+
+.basliklarKismi ul a:hover{
+    color: #f1faee;
+    transition: 0.2s;
+}
+
+
+/*Footer kısmı*/
+.footer{
+    width: 100%;
+    height:160px;
+    background-color: #A65E4E;
+    position: relative;
+    left: 0;
+    top:270px;
+}
+
+.footer .logo{
+    width: 100px;
+    height: 100px;
+    float: left;
+    position: absolute;
+    left:15%;
+    top:30px;
+}
+
+.footer .logo img{
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+.footer ul{
+    float: right;
+    position: relative;
+    right:10%;
+    top:25px;
+}
+
+.footer ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.footer p{
+    text-align: center;
+    position: relative;
+    top:130px;
+    left: 8%;
+    overflow: hidden;
+    color: #212221;
+    font-size: 1em;
+}
+
+/*Müzeler sayfasının css kodları */
+.kutu1, .kutu2{
+    margin: 5px;
+}
+
+.kutu1 img {
+    clear: left;
+    width: 400px;
+    height:300px;
+    float: left;
+    position: relative;
+    top:10px;
+    margin:5px 15px 10px 20px;
+}
+
+.kutu2 img{
+    width: 400px;
+    height:300px;
+    position: relative;
+    top:10px;
+    margin:5px 20px 10px 15px;
+    float: right;
+}
+
+.yazi{
+    padding: 10px;
+    margin-left: 10px;
+    line-height: 1.3em;
+}
+
+.yazi h2{
+    color: #4b91ce;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    font-size: 1.7em;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.685);
+}
+
+.yazi p{
+    text-align: justify; 
+    margin-top: 8px;
+    font-size: 1.03em;
+}
+
+.yazi strong{
+    color: #A65E4E;
+}
+
+.content hr{
+    border:1px ridge #2122218a;
+    margin:30px;
+}
+
+.yazilarKismi iframe{
+    border:1px outset #2122218a;
+    margin-left: 25%;
+    margin-right:25%;
+}
+
+/*Resim slayt kısmı*/
+.carousel-container {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;  
+    margin-bottom:-80px;
+    margin-top:-30px;
+}
+
+.navigation .prev {
+    position: absolute;
+    z-index: 10;
+    font-size: 25px;
+    top: 40%;
+    left: -30px;
+    font-weight: 700;
+  }
+  .navigation .next {
+    right: 10px;
+    position: absolute;
+    font-size: 25px;
+    z-index: 10;
+    top: 40%;
+    font-weight: 700;
+  }
+  .navigation .nav-btn {
+    background: #a65e4e8e;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  }
+  .navigation .nav-btn:hover {
+    background: #A65E4E;
+    transition: 0.2s;
+  }
+
+  .carousel {
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  
+  }
+  .carousel img {
+    width: 100%;
+    transition: all 0.3s ease;
+    border:8px solid #A65E4E;
+  }
+  
+  .item {
+    position: absolute;
+    display: none;
+  }
+  
+  .main {
+    display: block;
+  }
+  
+
+/*Haberler sayfasının css kodları */
+.kutu1, .kutu2{
+    margin: 5px;
+}
+
+.haber img {
+    clear: left;
+    width: 85%;
+    position: relative;
+    justify-content: center;
+    margin:5px 9%;
+}
+
+.haber {
+    margin:5px 5%;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+.haber  h2{
+    color: #4b91ce;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    font-size: 1.72em;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.685);
+}
+
+.haber  a{
+    text-decoration: none;
+    color: #A65E4E;
+    font-size: 1.1em;
+    padding: 2px;
+}
+
+.haber a:hover{
+    color: #4b91ce;
+    transition: 0.3s;
+    border-radius: 10px ;
+    background-color:#f3d4bac7;
+}
+
+/*Hakkımızda sayfası css kodları*/
+[type="radio"] {
+    display: none;
+  }
+  
+  #slider {
+    height: 55vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    margin-bottom: -150px;
+  }
+  
+  #slider label {
+    margin: auto;
+    width: 30%;
+    height: 80%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+  
+  #s1:checked ~ #slide4,
+  #s2:checked ~ #slide5,
+  #s3:checked ~ #slide1,
+  #s4:checked ~ #slide2,
+  #s5:checked ~ #slide3 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+    transform: translate3d(-30%, 0, -200px);
+  }
+  
+  #s1:checked ~ #slide5,
+  #s2:checked ~ #slide1,
+  #s3:checked ~ #slide2,
+  #s4:checked ~ #slide3,
+  #s5:checked ~ #slide4 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    transform: translate3d(-15%, 0, -100px);
+  }
+  
+  #s1:checked ~ #slide1,
+  #s2:checked ~ #slide2,
+  #s3:checked ~ #slide3,
+  #s4:checked ~ #slide4,
+  #s5:checked ~ #slide5 {
+    box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
+    transform: translate3d(0, 0, 0);
+  }
+  
+  #s1:checked ~ #slide2,
+  #s2:checked ~ #slide3,
+  #s3:checked ~ #slide4,
+  #s4:checked ~ #slide5,
+  #s5:checked ~ #slide1 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    transform: translate3d(15%, 0, -100px);
+  }
+  
+  #s1:checked ~ #slide3,
+  #s2:checked ~ #slide4,
+  #s3:checked ~ #slide5,
+  #s4:checked ~ #slide1,
+  #s5:checked ~ #slide2 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+    transform: translate3d(30%, 0, -200px);
+  }
+  
+  #slide1 {
+    background: #f2ceae;
+  }
+  #slide2 {
+    background: #a65e4e;
+  }
+  #slide3 {
+    background: #bcd8f3;
+  }
+  #slide4 {
+    background: #a65e4e;
+  }
+  #slide5 {
+    background: #f2ceae;
+  }
+
+  inline {
+    width: 100px;
+    display: inline-flex;
+  }
+  
+  .baslik {
+    margin: 90px;
+    color: #f1faee;
+    font-size: 300%;
+    font-weight: bolder;
+    text-align: center;
+  
+  }
+  .paragraf {
+    padding-inline: 10px;
+    color: #212221;
+    font-size: 140%;
+    margin: 5px 40px;
+    text-align: justify;
+    font-weight: normal;
+    line-height: 115%;
+  }
+
+ /*Yardım sayfasının css kodları*/
+ .formKismi{
+  width: 80%;
+  background-color: #bcd8f3;
+  padding:50px 10%;
+  border-radius: 2px 100px;
+  box-shadow: 5px 5px 5px #eed5bebb;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.formKismi p{
+  color: #212221;
+  font-size: 1.7em;
+  text-align: center;
+  margin:20px 0;
+}
+
+.formKismi fieldset{
+  border: 3px ridge #A65E4E;
+  margin:20px auto;
+  font-size: 30px;
+  border-radius: 2px 80px;
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.479);
+}
+
+.formKismi legend{
+  font-size: 30px;
+  color: #f1faee;
+  letter-spacing: 0.5em;
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.685);
+  background-color:  #A65E4E;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.formKismi table{
+  padding: 5%;
+  font-size: 15px;
+  color:#212221;
+}
+.formKismi table td{
+  padding: 1%;
+  font-size: 20px;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*raido butonu kaldırma */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* radio buton oluşturma */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* radio buton üzerine geldiğinde*/
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* radio butona tıklandığında */
+.container input:checked ~ .checkmark {
+  background-color: #4b91ce;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.formKismi input {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  color:#212221;
+  cursor: pointer;
+}
+
+.formKismi input:focus {
+  border: 3px solid #4b91ce;
+}
+.formKismi textarea{
+  width: 150%;
+  height: 150px;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  transition: 0.5s;
+  resize: none;
+  outline: none;
+  color:#212221;
+  cursor: pointer;
+}
+
+.formKismi textarea:focus {
+  border: 3px solid #4b91ce;
+}
+
+.formKismi input[type=submit]{
+  width: 50%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  color:#212221;
+  position: relative;
+  left: 220px;
+  cursor: pointer;
+  background-color: #f1faee;
+  font-size: 1.1em;
+    font-weight: bold;
+}
+
+.formKismi input[type=submit]:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);  
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #4b91ced7;
+  color:#f1faee;
+}
+
+.formKismi select{
+  width: 150%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  color:#212221;
+  cursor: pointer;
+}
+
+.formKismi .muzeİsimleri{
+  padding: 10px 5px;
+}
+
+
+
